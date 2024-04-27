@@ -1,4 +1,4 @@
- /* firstsections */
+/* firstsections */
  .firstsections .card{
     margin: 10px ;
     padding: 20px ;
@@ -9,3 +9,130 @@
 .firstsections .card h3{
     font-size: 23px ;
 }
+
+/* twosections  */
+.twosections{
+    background-color: #6b63ffd5;
+    color: white;
+    padding: 45px  20px ;
+}
+.twosections .card{
+    margin: 10px ;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.twosections .card:hover{
+    transform: scale(1.01);
+}
+.twosections .card img{
+    opacity: 0.6;
+}
+.twosections .card img:hover{
+    opacity:1;
+}
+/* end two sections  */
+
+
+
+/* three sections  */
+.threesections{
+  background-color: #424890;
+  padding: 40px 20px ;
+  color: white;
+  text-transform: capitalize;
+}
+ .item {
+  background-color: #2e3267;
+  padding: 20px;
+  margin-bottom: 10px;
+ font-size: 17px;
+ font-weight: 500;
+ }
+ .threesections h3{
+  font-size: 17px ;
+  letter-spacing: 1px;
+  font-weight: 400;
+ }
+.hidden {
+  display: none;
+}
+/* ------------------------ */
+
+/*  strat foursections */
+.foursections{
+  background-color: #2e3267;
+  padding: 40px 20px ;
+  text-transform: capitalize;
+}
+.swiper-container  .card{
+  margin: 10px ;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 4px 4px 0 0;
+  }
+/* end foursections----------- */
+
+
+/* strat wiper */
+.divider {border: 1px solid #ccc;}
+img {width:100%;}
+
+     .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  /* 
+/* strat wiper */  
+
+
+
+/* strat footer */
+ .icons i{
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  padding: 10px ;
+  border: 1px solid white ;
+  margin: 0 3px ;
+  border-radius: 50%;
+  font-size: 24px ;
+}
+  .icons i:hover{
+  background-color: #2e3267;
+}
+/* end footer */
