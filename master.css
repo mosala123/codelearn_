@@ -1,3 +1,4 @@
+ /* home  */
 /* firstsections */
  .firstsections .card{
     margin: 10px ;
@@ -12,40 +13,36 @@
 
 /* twosections  */
 .twosections{
-    background-color: #6b63ffd5;
-    color: white;
-    padding: 45px  20px ;
-}
+  padding: 40px 10px ;
+  background-color: #2e3267;
+} 
 .twosections .card{
-    margin: 10px ;
-    color: #000;
-    font-weight: 500;
-    text-align: center;
-    transition: 0.3s ease;
+  margin:  10px ;
+  text-align: center;
+  opacity: 0.8;
+  transition: 0.3s ease;
 }
 .twosections .card:hover{
-    transform: scale(1.01);
+ opacity: 1;
 }
-.twosections .card img{
-    opacity: 0.6;
+.twosections .card h2{
+ font-size: 20px ;
 }
-.twosections .card img:hover{
-    opacity:1;
+.twosections .card p{
+ font-size: 15px ;
 }
 /* end two sections  */
-
-
 
 /* three sections  */
 .threesections{
   background-color: #424890;
-  padding: 40px 20px ;
+  padding: 40px 10px ;
   color: white;
   text-transform: capitalize;
 }
  .item {
   background-color: #2e3267;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 10px;
  font-size: 17px;
  font-weight: 500;
@@ -136,3 +133,141 @@ img {width:100%;}
   background-color: #2e3267;
 }
 /* end footer */
+
+
+
+/* about */
+.abouthome{
+  text-transform: capitalize;
+}
+.abouthome .card{
+  border-radius: 10px ;
+  transition: 0.3s ease;
+  background-color: #424890;
+  margin: 5px ;
+}
+.abouthome .card:hover{
+  background-color: #2e3267;
+ 
+}
+.abouthome i{
+  border: 1px solid white;
+  padding: 20px ;
+  width: 20px ;
+  height: 20px ;
+  border-radius: 10px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abouthome .icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+} 
+
+
+/*  */
+.fistsectionsabout{
+  text-transform: capitalize;
+  padding: 30px 10px ;
+  background-color: #424890;
+}
+.fistsectionsabout .card {
+     position: relative;
+     transition: 0.3s ease;
+     background-color: #2e3267;
+     margin:10px  6px ;
+ }
+
+.fistsectionsabout .card-body {
+     padding: 20px;
+ }
+ .fistsectionsabout .card  {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+.fistsectionsabout .card:hover{
+  opacity: 1;
+}
+.fistsectionsabout .social-icons {
+     display: none;
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+     background-color: #424890;
+     padding: 10px;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+  
+   
+ }
+ .fistsectionsabout .social-icons i{
+  color: white;
+ }
+
+ .card:hover .social-icons {
+     display: block;
+ }
+
+ .social-icons a {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ .social-icons a i {
+     font-size: 24px;
+     color: #333;
+}
+
+
+
+
+/*  strat homecourse course  */
+.homecourse .card{
+   margin:  10px ;
+   text-align: center;
+   opacity: 0.8;
+   transition: 0.3s ease;
+}
+.homecourse .card:hover{
+  opacity: 1;
+}
+.homecourse .card h2{
+  font-size: 20px ;
+}
+.homecourse .card p{
+  font-size: 15px ;
+}
+/* ebd homecourse */
+
+/* strat contacthome */
+.contacthome{
+  padding:  100px 10px ;
+  background-color: #2e3267;
+  color: white;
+}
+.contacthome img{
+  inline-size: 399px ;
+  height: 300px ;
+}
+.contacthome .card i{
+  color: white;
+  padding: 10px 10px 10px 0 ;
+}
+.contacthome .card a{
+  color: white;
+ 
+}
+.contacthome .social-links i {
+   transition: 0.3s ease;
+   font-size: 25px ;
+} 
+ 
+/* end contacthome */
+
+
+ 
