@@ -1,273 +1,339 @@
- /* home  */
-/* firstsections */
- .firstsections .card{
-    margin: 10px ;
-    padding: 20px ;
-    height: 220px ;
-    width: 100%;
-    border-radius: 20px ;
- }
-.firstsections .card h3{
-    font-size: 23px ;
+/* ========================
+   master.css - CodeLearn
+   Bootstrap 4.5.2 + Custom
+   ======================== */
+
+/* ---------- متغيرات الألوان ---------- */
+:root {
+  --primary: #6c63ff;
+  --primary-dark: #5a52d5;
+  --secondary: #424890;
+  --secondary-dark: #2e3267;
+  --dark-bg: #1f2641;
+  --light-text: #ffffff;
+  --shadow: 0 10px 30px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
 }
 
-/* twosections  */
-.twosections{
-  padding: 40px 10px ;
-  background-color: #2e3267;
-} 
-.twosections .card{
-  margin:  10px ;
-  text-align: center;
-  opacity: 0.8;
-  transition: 0.3s ease;
+/* ---------- تخصيص ألوان Bootstrap ---------- */
+.bg-primary {
+  background-color: var(--primary) !important;
 }
-.twosections .card:hover{
- opacity: 1;
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 4px 12px rgba(108,99,255,0.2);
+  transition: var(--transition);
 }
-.twosections .card h2{
- font-size: 20px ;
+.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108,99,255,0.3);
 }
-.twosections .card p{
- font-size: 15px ;
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
 }
-/* end two sections  */
+.btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.bg-secondary-dark {
+  background-color: var(--secondary-dark) !important;
+}
+.bg-dark-custom {
+  background-color: var(--dark-bg) !important;
+}
+.bg-secondary-custom {
+  background-color: var(--secondary) !important;
+}
 
-/* three sections  */
-.threesections{
-  background-color: #424890;
-  padding: 40px 10px ;
+/* ---------- أنيميشن Fade Up ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fadeUp 0.8s ease-out;
+}
+
+/* ---------- تحسين الـ Navbar ---------- */
+.navbar {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.nav-link {
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* ---------- البطاقات (Cards) ---------- */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 1.5rem;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.card-text {
+  color: #6c757d;
+}
+
+/* ---------- البطاقات المخصصة (في الأقسام الداكنة) ---------- */
+.card-dark {
+  background: var(--secondary) !important;
   color: white;
-  text-transform: capitalize;
 }
- .item {
-  background-color: #2e3267;
-  padding: 10px;
-  margin-bottom: 10px;
- font-size: 17px;
- font-weight: 500;
- }
- .threesections h3{
-  font-size: 17px ;
-  letter-spacing: 1px;
-  font-weight: 400;
- }
-.hidden {
-  display: none;
+.card-dark .card-text {
+  color: rgba(255,255,255,0.9);
 }
-/* ------------------------ */
 
-/*  strat foursections */
-.foursections{
-  background-color: #2e3267;
-  padding: 40px 20px ;
-  text-transform: capitalize;
-}
-.swiper-container  .card{
-  margin: 10px ;
-}
-.swiper-container {
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .swiper-slide img {
-    object-fit: cover;
-    margin-right: 20px;
-    border-radius: 4px 4px 0 0;
-  }
-/* end foursections----------- */
-
-
-/* strat wiper */
-.divider {border: 1px solid #ccc;}
-img {width:100%;}
-
-     .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  /* 
-/* strat wiper */  
-
-
-
-/* strat footer */
- .icons i{
+/* ---------- أيقونات الفئات (Categories) ---------- */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px !important;
+  font-size: 26px;
   color: white;
-  transition: 0.3s ease;
+  margin-bottom: 1rem;
+}
+.icon-box.primary {
+  background-color: var(--primary);
+}
+.icon-box.orange {
+  background-color: #ff9800;
+}
+.icon-box.green {
+  background-color: #4caf50;
+}
+.icon-box.yellow {
+  background-color: #ffc107;
+}
+.icon-box.red {
+  background-color: #ff5722;
+}
+.icon-box.purple {
+  background-color: var(--secondary);
+}
+
+/* ---------- قسم FAQ ---------- */
+.faq-item {
+  background: var(--secondary-dark);
+  border-radius: 16px;
+  padding: 1.25rem;
   cursor: pointer;
-  padding: 10px ;
-  border: 1px solid white ;
-  margin: 0 3px ;
+  transition: var(--transition);
+  margin-bottom: 1rem;
+}
+.faq-item:hover {
+  background: #3a3f7a;
+}
+.faq-item i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: white;
+}
+.faq-item p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+}
+.faq-answer {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.9);
+}
+.faq-answer.show {
+  display: block;
+}
+
+/* ---------- Swiper (Testimonials) ---------- */
+.swiper-container {
+  padding: 2rem 0.5rem;
+}
+.swiper-slide .card {
+  background: white;
+  color: #212529;
+  text-align: center;
+}
+.swiper-slide .card-img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  font-size: 24px ;
+  overflow: hidden;
+  margin: 1.5rem auto 0.5rem;
+  border: 4px solid var(--primary);
 }
-  .icons i:hover{
-  background-color: #2e3267;
+.swiper-slide .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/* end footer */
+.swiper-pagination-bullet {
+  background: white !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: rgba(108,99,255,0.6);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: var(--primary);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem;
+}
 
-
-
-/* about */
-.abouthome{
-  text-transform: capitalize;
-}
-.abouthome .card{
-  border-radius: 10px ;
-  transition: 0.3s ease;
-  background-color: #424890;
-  margin: 5px ;
-}
-.abouthome .card:hover{
-  background-color: #2e3267;
- 
-}
-.abouthome i{
+/* ---------- أيقونات السوشيال (فوتر) ---------- */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   border: 1px solid white;
-  padding: 20px ;
-  width: 20px ;
-  height: 20px ;
-  border-radius: 10px ;
+  color: white;
+  transition: var(--transition);
+  margin: 0 0.25rem;
+}
+.social-icon:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------- صفحة About (الفريق) ---------- */
+.team-card {
+  position: relative;
+  overflow: hidden;
+}
+.team-card .social-overlay {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  background: var(--primary);
+  padding: 1rem 0.5rem;
+  border-radius: 30px 0 0 30px;
+  transition: var(--transition);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.75rem;
 }
-.abouthome .icons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
-} 
-
-
-/*  */
-.fistsectionsabout{
-  text-transform: capitalize;
-  padding: 30px 10px ;
-  background-color: #424890;
+.team-card:hover .social-overlay {
+  right: 0;
 }
-.fistsectionsabout .card {
-     position: relative;
-     transition: 0.3s ease;
-     background-color: #2e3267;
-     margin:10px  6px ;
- }
-
-.fistsectionsabout .card-body {
-     padding: 20px;
- }
- .fistsectionsabout .card  {
-  opacity: 0.7;
-  transition: 0.3s ease;
-}
-.fistsectionsabout .card:hover{
-  opacity: 1;
-}
-.fistsectionsabout .social-icons {
-     display: none;
-     position: absolute;
-     top: 50%;
-     right: 0;
-     transform: translateY(-50%);
-     background-color: #424890;
-     padding: 10px;
-     border-radius: 5px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     z-index: 1;
-  
-   
- }
- .fistsectionsabout .social-icons i{
+.team-card .social-overlay a {
   color: white;
- }
-
- .card:hover .social-icons {
-     display: block;
- }
-
- .social-icons a {
-     display: block;
-     margin-bottom: 5px;
- }
-
- .social-icons a i {
-     font-size: 24px;
-     color: #333;
+  font-size: 1.25rem;
+  padding: 0 0.5rem;
+}
+.team-card .social-overlay a:hover {
+  transform: scale(1.2);
 }
 
-
-
-
-/*  strat homecourse course  */
-.homecourse .card{
-   margin:  10px ;
-   text-align: center;
-   opacity: 0.8;
-   transition: 0.3s ease;
-}
-.homecourse .card:hover{
-  opacity: 1;
-}
-.homecourse .card h2{
-  font-size: 20px ;
-}
-.homecourse .card p{
-  font-size: 15px ;
-}
-/* ebd homecourse */
-
-/* strat contacthome */
-.contacthome{
-  padding:  100px 10px ;
-  background-color: #2e3267;
+/* ---------- صفحة Contact ---------- */
+.contact-info a {
   color: white;
+  display: block;
+  margin-bottom: 0.75rem;
+  transition: var(--transition);
 }
-.contacthome img{
-  inline-size: 399px ;
-  height: 300px ;
+.contact-info a i {
+  margin-right: 0.75rem;
+  width: 20px;
 }
-.contacthome .card i{
+.contact-info a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+.contact-form {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 2rem;
+}
+.contact-form .form-control {
+  background: rgba(255,255,255,0.2);
+  border: none;
   color: white;
-  padding: 10px 10px 10px 0 ;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
 }
-.contacthome .card a{
+.contact-form .form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+.contact-form label {
   color: white;
- 
+  font-weight: 600;
 }
-.contacthome .social-links i {
-   transition: 0.3s ease;
-   font-size: 25px ;
-} 
- 
-/* end contacthome */
 
-
- 
+/* ---------- مسافات عامة ---------- */
+section {
+  padding: 80px 0;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}

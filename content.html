@@ -1,88 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeLearn </title>
-<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
-<link rel="stylesheet" href="master.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLearn · Contact</title>
+  <!-- Bootstrap 4.5.2 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <!-- Custom CSS (master.css) -->
+  <link rel="stylesheet" href="master.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; padding-top: 86px; }
+    @media (max-width: 992px) { body { padding-top: 76px; } }
+  </style>
 </head>
 <body>
-<!--navbar  -->
-<nav class="navbar navbar-expand-lg navbar-light " style="z-index: 999; top: 0;position: fixed;width: 100%;padding: 6px 40px ;background-color: #6c63ff;">
-    <a class="navbar-brand text-light " href="#" style="font-size: 24px;">CodeLearn</a>
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;" >
-        <span class="navbar-toggler-icon  " ></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"   >
-        <ul class="navbar-nav"  style="font-size: 20px ;">
-            
-            <li class="nav-item">
-                <a class="nav-link text-light" href="index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="about .html">About  </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="course.html">Course</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="content.html">Contact </a>
-            </li>
+
+  <!-- ==================== NAVBAR (موحدة) ==================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">CodeLearn</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about .html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="course.html">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="content.html">Contact</a>
+          </li>
         </ul>
+      </div>
     </div>
-</nav>
-<!-- end navbar -->
-  
-  
-<!--strat home  -->
-<div class="contacthome"> 
-<div class="container">
-  <div class="row">
-      <div class="col-md-6">
-          <div class="card">
-              <img src="images/contact.svg" class="card-img-top" alt="...">
-              <div class="card-body" style="background-color: #424890;">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" ><i class="fas fa-phone text-light"></i> 01024668770</a><br>
-                  <a href="#" ><i class="fas fa-message "></i> 408737658moe@gamail</a><br>
-                  <a href="#" ><i class="fa-solid fa-location-dot"></i> Mahalla</a>
-                  <div class="social-links">
-                      <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                  </div>
+  </nav>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="bg-secondary-dark text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Contact Info Card -->
+        <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+          <div class="card bg-secondary-custom text-white border-0 h-100">
+            <img src="images/contact.svg" class="card-img-top p-4" alt="Contact us">
+            <div class="card-body">
+              <h3 class="card-title font-weight-bold mb-4">Contact Information</h3>
+              <p class="card-text mb-4 text-light">We'd love to hear from you! Reach out using any of the methods below.</p>
+              <div class="contact-info">
+                <a href="tel:+0123456788" class="text-white">
+                  <i class="fas fa-phone"></i> +01 234 567 88
+                </a>
+                <a href="mailto:info@codelearn.com" class="text-white">
+                  <i class="fas fa-envelope"></i> info@codelearn.com
+                </a>
+                <a href="#" class="text-white">
+                  <i class="fa-solid fa-location-dot"></i> 123 Learning St, New York
+                </a>
               </div>
+              <div class="social-links mt-4">
+                <a href="#" class="social-icon mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon mr-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon mr-2"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
           </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="col-lg-6 fade-up">
+          <div class="contact-form">
+            <h3 class="text-white font-weight-bold mb-4">Send Us a Message</h3>
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Enter first name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control border-1" id="message" rows="4" placeholder="Your message here..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-          <form>
-              <div class="form-group">
-                  <label for="firstname">Firstname</label>
-                  <input type="text" class="form-control text-dark " id="firstname" name="firstname" placeholder="Firstname" >
-              </div>
-              <div class="form-group">
-                  <label for="lastname">Lastname</label>
-                  <input type="text" class="form-control text-dark " id="lastname" name="lastname" placeholder="Lastname">
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea class="form-control text-dark " id="message" name="message" placeholder="Ynput Your Message "></textarea>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control text-dark " id="email" name="email" placeholder="Email">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER (موحد) ==================== -->
+  <footer class="bg-secondary-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="text-uppercase font-weight-bold mb-4">
+            <i class="fas fa-gem mr-2"></i>CodeLearn
+          </h5>
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="text-uppercase font-weight-bold mb-4">Products</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">Angular</a></li>
+            <li><a href="#" class="text-white-50">React</a></li>
+            <li><a href="#" class="text-white-50">Vue</a></li>
+            <li><a href="#" class="text-white-50">Laravel</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="text-uppercase font-weight-bold mb-4">Useful links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white-50">Home</a></li>
+            <li><a href="about .html" class="text-white-50">About</a></li>
+            <li><a href="course.html" class="text-white-50">Course</a></li>
+            <li><a href="content.html" class="text-white-50">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="text-uppercase font-weight-bold mb-4">Contact</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-home mr-2"></i> New York, NY 10012</li>
+            <li><i class="fas fa-envelope mr-2"></i> info@codelearn.com</li>
+            <li><i class="fas fa-phone mr-2"></i> +01 234 567 88</li>
+          </ul>
+        </div>
       </div>
-  </div>
-</div>
-</div>
+      <hr class="bg-light">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <span>© 2025 Copyright: <a href="#" class="text-white font-weight-bold">CodeLearn</a></span>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

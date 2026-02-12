@@ -1,31 +1,57 @@
+// Initialize Swiper for testimonials
 var swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
+    }
+  }
 });
-//  
 
- 
+// ========== FAQ Toggle (الضغط على أيقونة + / -) ==========
 document.addEventListener("DOMContentLoaded", function() {
-  let items = document.querySelectorAll(".item");
+  // حدد كل عناصر FAQ
+  const faqItems = document.querySelectorAll(".faq-item");
 
-  items.forEach(function(item) {
-    let icon = item.querySelector("i");
-    let paragraph = item.querySelector("p");
-    let subHeading = item.querySelector("h3");
+  faqItems.forEach(function(item) {
+    const icon = item.querySelector("i");
+    const answer = item.querySelector(".faq-answer");
 
-    icon.addEventListener("click", function() {
-      if (icon.classList.contains("icon-plus")) {
-        icon.classList.remove("icon-plus");
-        icon.classList.add("icon-minus");
-        subHeading.classList.remove("hidden");
+    // تأكد من وجود الأيقونة والإجابة
+    if (!icon || !answer) return;
+
+    // إضافة حدث الضغط على الأيقونة فقط
+    icon.addEventListener("click", function(e) {
+      e.stopPropagation(); // منع تفعيل أي أحداث أخرى
+
+      // تبديل الأيقونة بين plus و minus
+      if (icon.classList.contains("fa-plus")) {
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
+        answer.classList.add("show"); // إظهار الإجابة
       } else {
-        icon.classList.remove("icon-minus");
-        icon.classList.add("icon-plus");
-        subHeading.classList.add("hidden");
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+        answer.classList.remove("show"); // إخفاء الإجابة
       }
     });
   });
 });
- 
